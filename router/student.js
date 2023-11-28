@@ -7,16 +7,10 @@ router.get('/students', studentController.index)
 
 router.get('/student/id/:id', studentController.getById)
 
-router.get('/student/:nis', studentController.getByNis)
-
 router.post('/student', studentController.store)
-
-router.put('/student/:nis', studentController.updateByNis)
 
 router.put('/student/id/:id', studentController.updateById)
 
 router.delete('/student/id/:id', studentController.deleteById)
-
-router.delete('/student/:nis', studentController.deleteByNis)
 
 module.exports = router
